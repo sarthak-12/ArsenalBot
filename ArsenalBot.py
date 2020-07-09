@@ -5,7 +5,7 @@ auth.set_access_token(access_token_key, access_token_key_secret)
 api = tweepy.API(auth)
 
 public_tweets = api.home_timeline()
-search_key = 'OnePlus' #keywords to be searched
+search_key = 'Arsenal' #keywords to be searched
 num = 5  #number of tweets to be searched
 for tweet in tweepy.Cursor(api.search , search_key).items(num):
 	try:
